@@ -14,7 +14,7 @@
 		<div class="title">
 			<h1>This Interior</h1>
 		</div>
-		<nav>
+		<nav id="nav">
 			<ul>
 				<li class="active"><a href="./interior-consultant.html">Home</a></li>
 				<li><a href="#">Collection</a></li>
@@ -22,6 +22,9 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
+		<div class="hamburger" id="hamburger" onclick="toggle()">
+			<div class="line"></div>
+		</div>
 	</header>
 
 	<div class="content">
@@ -54,4 +57,20 @@
 		created by <a href="https://github.com/louchebem06" target="_blank">louchebem06</a> - devChallenges.io
 	</footer>
 </body>
+<script>
+	function toggle() {
+		var hamburger = document.getElementById("hamburger");
+		var nav = document.getElementById("nav");
+		if (hamburger.classList.contains("hamburger")) {
+			hamburger.classList.remove("hamburger")
+			hamburger.classList.add("close")
+			nav.style.display = "block"
+		} else {
+			hamburger.classList.add("hamburger")
+			hamburger.classList.remove("close")
+			nav.style.display = "none"
+		}
+
+	}
+</script>
 </html>

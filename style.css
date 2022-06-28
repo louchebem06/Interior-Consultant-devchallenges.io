@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	background-color: #181719;
+	color: #FFFFFF;
+}
+
+body {
+	max-width: 1440px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	margin-top: 3%;
+}
+
+header, .content, footer {
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 100%;
+}
+
+header .title h1 {
+	font-family: 'Crimson Pro';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 32px;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;
+	width: 102px;
+	height: 32px;
+	text-align: center;
+}
+
+header .title {
+	width: 20%;
+}
+
+header nav {
+	width: 80%;
+	text-align: right;
+}
+
+header nav ul {
+	list-style-type: none;
+}
+
+header nav ul li {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	display: inline;
+	margin: 5%;
+}
+
+header nav ul li a {
+	text-decoration: none;
+}
+
+.active {
+	font-weight: 700;
+	position: relative;
+	background-color: transparent;
+}
+
+.active::after {
+	content: "";
+
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+
+	border: 1px solid white;
+}
+
+.content .design img {
+	display: block;
+	width: 100%;
+}
+
+.content .text h2 {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 61px;
+}
+
+.content .text p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.content .text .read a {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+}
+
+.content .text .read {
+	display: flex;
+	gap: 10px;
+}
+
+.content .text h2, .content .text p {
+	margin-bottom: 10%;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5%;
+}
+
+.content .text {
+	width: 30%;
+}
+
+.content .design {
+	width: 70%;
+	padding: 4.5%;
+	position: relative;
+}
+
+.content .design .card {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color: #181719;
+	position: absolute;
+	width: 45%;
+	padding-left: 3%;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	bottom: 0;
+	left: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.content .design .card img {
+	border-radius: 50px;
+	display: block;
+	width: 50px;
+}
+
+.fullname {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.job {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #828282;
+}
+
+.msg {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	width: 287px;
+}
+
+.content .design .card .user {
+	display: flex;
+	gap: 20px;
+}
+
+.content .design .card .user .info {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2%;
+	color: #A9A9A9;
+}
+
+footer a {
+	color: #A9A9A9;
+}

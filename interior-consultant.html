@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 	<title>Interior Consultant</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="./devchallenges.png" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script src="./script.js"></script>
 </head>
 <body>
 	<header>
@@ -57,20 +58,4 @@
 		created by <a href="https://github.com/louchebem06" target="_blank">louchebem06</a> - devChallenges.io
 	</footer>
 </body>
-<script>
-	function toggle() {
-		var hamburger = document.getElementById("hamburger");
-		var nav = document.getElementById("nav");
-		if (hamburger.classList.contains("hamburger")) {
-			hamburger.classList.remove("hamburger")
-			hamburger.classList.add("close")
-			nav.style.display = "block"
-		} else {
-			hamburger.classList.add("hamburger")
-			hamburger.classList.remove("close")
-			nav.style.display = "none"
-		}
-
-	}
-</script>
 </html>

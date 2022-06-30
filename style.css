@@ -8,12 +8,12 @@
 	padding: 0;
 	background-color: #181719;
 	color: #FFFFFF;
-	overflow-x: hidden;
 }
 
 body {
 	max-width: 1440px;
 	margin: auto;
+	overflow-x: hidden;
 }
 
 header .hamburger {
@@ -74,16 +74,16 @@ header nav ul li a {
 .active {
 	font-weight: 700;
 	position: relative;
-	background-color: transparent;
 }
 
 .active::after {
 	content: "";
 	width: 100%;
+	height: 1px;
 	position: absolute;
 	left: 0;
 	bottom: -10px;
-	border: 1px solid white;
+	background-color: white;
 }
 
 .content img {
@@ -217,7 +217,22 @@ footer a {
 
 @media (max-width: 750px) {
 	header nav {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 1000;
 		display: none;
+	}
+
+	header nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		align-items: center;
+		overflow: hidden;
 	}
 
 	header {
@@ -232,8 +247,9 @@ footer a {
 		display: block;
 		width: 35px;
 		height: 35px;
-		position: relative;
+		position: absolute;
 		cursor: pointer;
+		right: 2%;
 	}
 
 	header .hamburger .line {
@@ -271,8 +287,10 @@ footer a {
 		display: block;
 		width: 35px;
 		height: 35px;
-		position: relative;
+		position: fixed;
 		cursor: pointer;
+		z-index: 1001;
+		right: 2%;
 	}
 
 	header .close::after {
@@ -330,7 +348,7 @@ footer a {
 	}
 
 	.content img {
-		width: 98%;
+		width: 96%;
 	}
 
 	.content .design .card {

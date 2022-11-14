@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://jolcwij.cluster029.hosting.ovh.net/devchallenge.io/interior-consulting/interior-consultant.html">
+    <a href="https://interior-consulting.bryanledda.fr/">
       Demo
     </a>
     <span> | </span>

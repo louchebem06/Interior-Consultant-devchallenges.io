@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://interior-consulting.bryanledda.fr/">
+    <a href="https://louchebem06.github.io/Interior-Consultant-devchallenges.io/interior-consultant">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/louchebem06/Interior-Consultant-devchallenge.io">
+    <a href="https://github.com/louchebem06/Interior-Consultant-devchallenges.io">
       Solution
     </a>
     <span> | </span>
